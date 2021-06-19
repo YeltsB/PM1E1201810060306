@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityConsulta">
+
+    <ListView
+        android:id="@+id/listaContactos"
+        android:layout_width="match_parent"
+        android:layout_height="475dp"
+        android:choiceMode="singleChoice"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:onClick="clickCall"
+        android:text="Llamar"
+        app:backgroundTint="#09A50F" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_Eliminar"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Eliminar "
+            android:onClick="clickELiminar"
+            app:backgroundTint="#F44336" />
+
+        <Button
+            android:id="@+id/btn_actualizar"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickActualizar"
+            android:text="Actualizar"
+            app:backgroundTint="#3F51B5" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickInicio"
+            android:text="Inicio" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
